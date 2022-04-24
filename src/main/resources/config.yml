@@ -1,0 +1,51 @@
+###############################################################################\
+#|                                   RiReport                                  |
+#|                                                                             |
+#|                             Author: yRicardinBaum                           |
+#|                                                                             |
+#|                                 Version: 1.0                                |
+#|                                                                             |
+#|                            O Mais Novo Plugin De Report                     |
+#|                                                                             |
+#|                                                                             |
+#|                          Copyright: Copyright Adversimental                 |
+#/#############################################################################\
+
+
+database:
+  # Suporte para sqlite, mysql e mongodb
+  type: "sqlite"
+  # Informações do mysql
+  address: "localhost"
+  database: "ripunish"
+  username: "root"
+  password: "admin"
+  # Escolha o nome da tabela do mysql (pode ser qualquer nome ja que caso não existe ele cria automaticamente)
+  mysql-table: "RiReport"
+  # Abaixo vai o link do mongo
+  mongo: ""
+
+
+commands:
+  playerinfo:
+    enable: true
+    permission: "rireports.playerinfo"
+  report:
+    enable: true
+    # Deixe a permissão em branco caso queira que todos possam usar
+    permission: ""
+  reports:
+    enable: true
+    # Esta permissão também será usada para receber notificação de novos reports!
+    permission: "rireport.reports"
+
+messages:
+  no-permission: "&cVocê não possui permissão para executar este comando!"
+  myself: "&cVocê não pode se reportar!"
+  teleported: "&aTeletransportado com sucesso!"
+  offline: "&cUsuário OffLine ou não encontrado!"
+  not-mencioned: "&c/report (player)"
+  has-reported: "&cVocê já reportou esse usuário antes! Aguarde a nossa equipe examina-lo"
+  custom-report: "&aAgora envie o motivo para reportar esse usuário!"
+  removed-user: "&aDenuncia removida com sucesso!"
+  reported: "&aUsuário reportado com sucesso! Aguarde até que nossa equipe examine!"

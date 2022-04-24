@@ -1,0 +1,22 @@
+###############################################################################\
+#|                                   RiReport                                  |
+#|                                                                             |
+#|                             Author: yRicardinBaum                           |
+#|                                                                             |
+#|                                 Version: 1.0                                |
+#|                                                                             |
+#|                            O Mais Novo Plugin De Report                     |
+#|                                                                             |
+#|                                                                             |
+#|                          Copyright: Copyright Adversimental                 |
+#/#############################################################################\
+
+types:
+  hack:
+    nome: "Uso de hack"
+  abuso-de-autoridade:
+    nome: "Abuso de autoridade"
+  abuso-de-bugs:
+    nome: "Abuso de bugs"
+  ofenca:
+    nome: "Ofença"

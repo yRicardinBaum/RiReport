@@ -18,7 +18,7 @@ import java.util.logging.Level;
 
 public abstract class Commands extends Command {
 
-    public static final ModuleLogger LOGGER = new ModuleLogger("RiPunish Commands");
+    public static final ModuleLogger LOGGER = new ModuleLogger("RiReport Commands");
 
     public Commands(String name, String... aliases) {
         super(name);
@@ -26,7 +26,7 @@ public abstract class Commands extends Command {
 
         try {
             SimpleCommandMap simpleCommandMap = (SimpleCommandMap) Bukkit.getServer().getClass().getDeclaredMethod("getCommandMap").invoke(Bukkit.getServer());
-            simpleCommandMap.register(this.getName(), "RiKitPvP", this);
+            simpleCommandMap.register(this.getName(), "RiReport", this);
         } catch (ReflectiveOperationException ex) {
            LOGGER.log(Level.SEVERE, "Não foi possivel registrar o comando: ", ex);
         }
